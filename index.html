@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>X1 by FSR.</title>
+  <meta name="description" content="X1 is a Discord application for Mario Kart players: leaderboards, partners, rivals, clans, tiers, streaks and play times from the MKCentral Lounge.">
+  <meta name="theme-color" content="#16171d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="X1 by FSR.">
+  <meta property="og:description" content="X1 is a Discord application for Mario Kart players: leaderboards, partners, rivals, clans, tiers, streaks and play times from the MKCentral Lounge.">
+  <meta property="og:image" content="https://enhasskill.github.io/x1/assets/x1_icon.png">
+  <meta property="og:url" content="https://enhasskill.github.io/x1/">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" hreflang="en" href="https://enhasskill.github.io/x1/"><link rel="alternate" hreflang="ja" href="https://enhasskill.github.io/x1/ja/">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- Monocle (spur.us): bot and abuse detection. it only reports; nothing on the site depends on it -->
+  <script async src="https://js.mcl.io/d/mcl.js?tk=1HzaV0h2CZ25SlQYi27Td9Kd51tJR9T1FwGRzDhdMRqpbxKnv7jCggosUGJ88B6ASjgIxRjkyYmASy9FEVXpAyA17WCWYbVDkwds3RBheu041gwbUmIIXma4YsxEloVFVJ4BdQDH1575kjvIdCwP061YrWRYVLMFDnHPrkYUyRgMrRFnp1ughyQ77DeGCpnI7UoNouU6lD385myFIRJ9ZV9PL3R2mz1GCvpBICcg6K693Snu7fbRrTwO2ypIMTcOd8hK5tF2G9BxOgqluMwhzAjCA3parbknkTLfISObu5M7ctwMLdjhRUE47CisoGdNGUmwb19TJTNAI2wGdQeoR7YsQLmcckX50YXHJ4x8hbL4pG3c8wTotVjrKcJHye36VqB33kuktbWTNIeDNd9tnuj0oTVE" id="_mcl"></script>
+</head>
+<body data-page="commands" data-home-title="Commands - X1 by FSR.">
+<div class="shell">
+  <header class="top">
+    <a class="brand" href="index.html"><img src="assets/x1_icon.png" alt="" width="44" height="44">
+      <span><b>X1</b><small>Multi-purpose Mario Kart related application. Made by Fentstreet Research &amp; Development.</small></span></a>
+    <nav class="tabs" aria-label="Pages"><a href="index.html" aria-current="page">Commands</a><a href="errors.html">Error codes</a></nav>
+    <details class="lang"><summary aria-label="Language"><img src="assets/flag_us.svg" alt="" width="22" height="15"> <span>EN</span></summary><ul><li><a href="index.html" data-base="index.html" hreflang="en" lang="en" aria-current="true"><img src="assets/flag_us.svg" alt="" width="22" height="15"> English</a></li><li><a href="ja/index.html" data-base="ja/index.html" hreflang="ja" lang="ja"><img src="assets/flag_jp.svg" alt="" width="22" height="15"> 日本語</a></li></ul></details>
+    <a class="install" href="https://discord.com/oauth2/authorize?client_id=1547699461512503426" target="_blank" rel="noopener">Install</a>
+  </header>
+  <div class="layout">
+    <aside class="side" aria-label="Commands">
+      <label class="search"><span class="sr">Search commands</span><input id="q" type="search" placeholder="Search commands  ( / )" autocomplete="off"></label>
+      <nav><h2>Players</h2><a href="#/stats" data-nav="stats" data-search="stats a player&#x27;s stats card and mmr graph プレイヤーの統計カードとmmrグラフ mk8dx mkworld 12p game player season all_time last tier format against teammate"><b>/stats</b><small>A player&#x27;s stats card and MMR graph</small></a><a href="#/compare" data-nav="compare" data-search="compare two players side by side 2人のプレイヤーを並べて比較 mk8dx mkworld 12p game player1 player2 season all_time last tier format"><b>/compare</b><small>Two players side by side</small></a><a href="#/partners" data-nav="partners" data-search="partners who a player scores best with プレイヤーが最も噛み合うパートナー mk8dx mkworld 12p game player season all_time min_tables order tier format"><b>/partners</b><small>Who a player scores best with</small></a><a href="#/rivals" data-nav="rivals" data-search="rivals who a player faces most, and how it goes よく当たる相手と、その相手との成績 mk8dx game player season all_time min_tables tier format"><b>/rivals</b><small>Who a player faces most, and how it goes</small></a><a href="#/tiers" data-nav="tiers" data-search="tiers results in each tier tier別の成績 mk8dx mkworld 24p game player season all_time format"><b>/tiers</b><small>Results in each tier</small></a><a href="#/streak" data-nav="streak" data-search="streak streaks and recent mmr 連勝・連敗と最近のmmr mk8dx game player season"><b>/streak</b><small>Streaks and recent MMR</small></a><a href="#/when" data-nav="when" data-search="when when a player usually plays プレイヤーがよくプレイする時間帯 mk8dx game player season all_time timezone"><b>/when</b><small>When a player usually plays</small></a><h2>Lounge</h2><a href="#/leaderboard" data-nav="leaderboard" data-search="leaderboard the lounge leaderboard loungeランキング mk8dx mkworld 12p mkworld 24p game season country search limit page"><b>/leaderboard</b><small>The lounge leaderboard</small></a><a href="#/calctable" data-nav="calctable" data-search="calctable the mmr change of a table tableの予想mmr変動 mk8dx mkworld 12p mkworld 24p table"><b>/calctable</b><small>The MMR change of a table</small></a><a href="#/calcroom" data-nav="calcroom" data-search="calcroom what each place gives in a live room 進行中のルームの順位別の予想結果 mk8dx mkworld 24p mode room team"><b>/calcroom</b><small>What each place gives in a live room</small></a><h2>Teams and bot</h2><a href="#/clan" data-nav="clan" data-search="clan a team from the mkcentral registry mkcentralのチーム mk8dx mkworld game name"><b>/clan</b><small>A team from the MKCentral registry</small></a><a href="#/lang" data-nav="lang" data-search="lang english or japanese 英語または日本語 mk8dx language"><b>/lang</b><small>English or Japanese</small></a><a href="#/help" data-nav="help" data-search="help every command and its settings すべてのコマンドと設定 mk8dx "><b>/help</b><small>Every command and its settings</small></a></nav>
+      <p class="none" id="none" hidden>No command matches.</p>
+    </aside>
+    <main class="main" id="main">
+      <section id="overview">
+        <h1 class="page-title">Commands</h1>
+        <p class="lead">What X1 does for Mario Kart players, from the MKCentral Lounge. Pick a command to see what it shows and an example of its reply. When a command fails, its message ends with a code; the list is on <a href="errors.html">Error codes</a>.</p>
+        <section class="group"><h2>Players</h2><div class="cards"><a class="card" href="#/stats" data-search="stats a player&#x27;s stats card and mmr graph プレイヤーの統計カードとmmrグラフ mk8dx mkworld 12p game player season all_time last tier format against teammate"><b>/stats</b><span>A player&#x27;s stats card and MMR graph</span><em>MK8DX</em> <em>MKWorld 12P</em> </a><a class="card" href="#/compare" data-search="compare two players side by side 2人のプレイヤーを並べて比較 mk8dx mkworld 12p game player1 player2 season all_time last tier format"><b>/compare</b><span>Two players side by side</span><em>MK8DX</em> <em>MKWorld 12P</em> </a><a class="card" href="#/partners" data-search="partners who a player scores best with プレイヤーが最も噛み合うパートナー mk8dx mkworld 12p game player season all_time min_tables order tier format"><b>/partners</b><span>Who a player scores best with</span><em>MK8DX</em> <em>MKWorld 12P</em> </a><a class="card" href="#/rivals" data-search="rivals who a player faces most, and how it goes よく当たる相手と、その相手との成績 mk8dx game player season all_time min_tables tier format"><b>/rivals</b><span>Who a player faces most, and how it goes</span></a><a class="card" href="#/tiers" data-search="tiers results in each tier tier別の成績 mk8dx mkworld 24p game player season all_time format"><b>/tiers</b><span>Results in each tier</span><em>MK8DX</em> <em>MKWorld 24P</em> </a><a class="card" href="#/streak" data-search="streak streaks and recent mmr 連勝・連敗と最近のmmr mk8dx game player season"><b>/streak</b><span>Streaks and recent MMR</span></a><a class="card" href="#/when" data-search="when when a player usually plays プレイヤーがよくプレイする時間帯 mk8dx game player season all_time timezone"><b>/when</b><span>When a player usually plays</span></a></div></section><section class="group"><h2>Lounge</h2><div class="cards"><a class="card" href="#/leaderboard" data-search="leaderboard the lounge leaderboard loungeランキング mk8dx mkworld 12p mkworld 24p game season country search limit page"><b>/leaderboard</b><span>The lounge leaderboard</span><em>MK8DX</em> <em>MKWorld 12P</em> <em>MKWorld 24P</em> </a><a class="card" href="#/calctable" data-search="calctable the mmr change of a table tableの予想mmr変動 mk8dx mkworld 12p mkworld 24p table"><b>/calctable</b><span>The MMR change of a table</span><em>MK8DX</em> <em>MKWorld 12P</em> <em>MKWorld 24P</em> </a><a class="card" href="#/calcroom" data-search="calcroom what each place gives in a live room 進行中のルームの順位別の予想結果 mk8dx mkworld 24p mode room team"><b>/calcroom</b><span>What each place gives in a live room</span><em>MK8DX</em> <em>MKWorld 24P</em> </a></div></section><section class="group"><h2>Teams and bot</h2><div class="cards"><a class="card" href="#/clan" data-search="clan a team from the mkcentral registry mkcentralのチーム mk8dx mkworld game name"><b>/clan</b><span>A team from the MKCentral registry</span><em>MK8DX</em> <em>MKWorld</em> </a><a class="card" href="#/lang" data-search="lang english or japanese 英語または日本語 mk8dx language"><b>/lang</b><span>English or Japanese</span></a><a class="card" href="#/help" data-search="help every command and its settings すべてのコマンドと設定 mk8dx "><b>/help</b><span>Every command and its settings</span></a></div></section>
+      </section>
+      <article class="cmd" data-cmd="stats"><header class="head"><h2>/stats</h2></header><div class="seg" role="tablist" aria-label="Game"><button type="button" role="tab" data-v="mk8dx">MK8DX</button><button type="button" role="tab" data-v="w12">MKWorld 12P</button></div><div class="variant" data-variant="mk8dx" data-cmd="stats" id="stats"><p class="vlabel">MK8DX</p><div class="cmd-body"><div class="cmd-text"><p class="what">A player's stats card with their MMR graph. Filters turn the graph into a running +/- total.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li><li>all_time</li><li>last</li><li>tier</li><li>format</li><li>against</li><li>teammate</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/stats game: MK8DX player: Faria</code>
+          </p>
+          <div class="embed" style="--bar: #286cd3">
+            <img class="thumb" src="assets/ranks/Sapphire.png" alt="Sapphire rank" width="64" height="64">
+            <p class="title">Faria - S16</p>
+            <p class="desc"><a href="https://lounge.mkcentral.com/mk8dx/PlayerDetails/82904" target="_blank" rel="noopener">Faria</a></p>
+            <dl class="fields">
+              <div class="field"><dt>Rank</dt><dd>199</dd></div>
+              <div class="field"><dt>MMR</dt><dd>10023</dd></div>
+              <div class="field"><dt>Peak MMR</dt><dd>10132</dd></div>
+              <div class="field"><dt>Win Rate</dt><dd>56.5%</dd></div>
+              <div class="field"><dt>W-L (Last 10)</dt><dd>5 - 5</dd></div>
+              <div class="field"><dt>+/- (Last 10)</dt><dd>-53</dd></div>
+              <div class="field"><dt>Avg. Score</dt><dd>81.5</dd></div>
+              <div class="field"><dt>Top Score</dt><dd><a href="https://lounge.mkcentral.com/mk8dx/TableDetails/1127784" target="_blank" rel="noopener">108</a></dd></div>
+              <div class="field"><dt>Partner Avg.</dt><dd>82.7</dd></div>
+              <div class="field"><dt>Events Played</dt><dd>23</dd></div>
+              <div class="field"><dt>Largest Gain</dt><dd><a href="https://lounge.mkcentral.com/mk8dx/TableDetails/1129948" target="_blank" rel="noopener">+286</a></dd></div>
+              <div class="field"><dt>Largest Loss</dt><dd><a href="https://lounge.mkcentral.com/mk8dx/TableDetails/1126719" target="_blank" rel="noopener">-228</a></dd></div>
+            </dl>
+            <img class="pic" src="assets/stats.png" alt="/stats game: MK8DX player: Faria" loading="lazy" width="700" height="425">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:49:50</p>
+          </div>
+        </div></div></div><div class="variant" data-variant="w12" data-cmd="stats" id="w12-stats"><p class="vlabel">MKWorld 12P</p><div class="cmd-body"><div class="cmd-text"><p class="what">The stats card with MKWorld's ranks (no divisions).</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li><li>all_time</li><li>last</li><li>tier</li><li>format</li><li>against</li><li>teammate</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/stats game: MKWorld 12P player: Oxy</code>
+          </p>
+          <div class="embed" style="--bar: #9ccbd6">
+            <img class="thumb" src="assets/ranks/Diamond.png" alt="Diamond rank" width="64" height="64">
+            <p class="title">Oxy - MKWorld 12P - S3</p>
+            <p class="desc"><a href="https://lounge.mkcentral.com/mkworld/PlayerDetails/40774" target="_blank" rel="noopener">Oxy</a></p>
+            <dl class="fields">
+              <div class="field"><dt>Rank</dt><dd>16</dd></div>
+              <div class="field"><dt>MMR</dt><dd>13084</dd></div>
+              <div class="field"><dt>Peak MMR</dt><dd>13301</dd></div>
+              <div class="field"><dt>Win Rate</dt><dd>56.7%</dd></div>
+              <div class="field"><dt>W-L (Last 10)</dt><dd>9 - 1</dd></div>
+              <div class="field"><dt>+/- (Last 10)</dt><dd>+554</dd></div>
+              <div class="field"><dt>Avg. Score</dt><dd>89.7</dd></div>
+              <div class="field"><dt>Top Score</dt><dd><a href="https://lounge.mkcentral.com/mkworld/TableDetails/1145229" target="_blank" rel="noopener">132</a></dd></div>
+              <div class="field"><dt>Partner Avg.</dt><dd>82.0</dd></div>
+              <div class="field"><dt>Events Played</dt><dd>644</dd></div>
+              <div class="field"><dt>Largest Gain</dt><dd><a href="https://lounge.mkcentral.com/mkworld/TableDetails/1112081" target="_blank" rel="noopener">+259</a></dd></div>
+              <div class="field"><dt>Largest Loss</dt><dd><a href="https://lounge.mkcentral.com/mkworld/TableDetails/1139855" target="_blank" rel="noopener">-426</a></dd></div>
+            </dl>
+            <img class="pic" src="assets/w12_stats.png" alt="/stats game: MKWorld 12P player: Oxy" loading="lazy" width="700" height="425">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:49:55</p>
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><span></span><a href="#/compare">/compare &rarr;</a></nav></article><article class="cmd" data-cmd="compare"><header class="head"><h2>/compare</h2></header><div class="seg" role="tablist" aria-label="Game"><button type="button" role="tab" data-v="mk8dx">MK8DX</button><button type="button" role="tab" data-v="w12">MKWorld 12P</button></div><div class="variant" data-variant="mk8dx" data-cmd="compare" id="compare"><p class="vlabel">MK8DX</p><div class="cmd-body"><div class="cmd-text"><p class="what">Two players side by side, on one graph.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player1</li><li>player2</li><li>season</li><li>all_time</li><li>last</li><li>tier</li><li>format</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/compare game: MK8DX player1: Faria player2: Adon all_time: True</code>
+          </p>
+          <div class="embed" style="--bar: #286cd3">
+            <img class="thumb" src="assets/ranks/Sapphire.png" alt="Sapphire rank" width="64" height="64">
+            <p class="title">Faria vs Adon - All time (S4-S16)</p>
+            <dl class="fields">
+              <div class="field"><dt>Rank</dt><dd><b>#199</b> vs #946</dd></div>
+              <div class="field"><dt>MMR</dt><dd><b>10023</b> vs 7171</dd></div>
+              <div class="field"><dt>Peak MMR</dt><dd><b>10132</b> vs 10116</dd></div>
+              <div class="field"><dt>Events Played</dt><dd>182 vs <b>767</b></dd></div>
+              <div class="field"><dt>Win Rate</dt><dd><b>61.0%</b> vs 51.9%</dd></div>
+              <div class="field"><dt>Avg Score</dt><dd>83.6 vs <b>85.1</b></dd></div>
+              <div class="field"><dt>Partner Avg</dt><dd><b>83.0</b> vs 80.9</dd></div>
+              <div class="field"><dt>Largest Gain</dt><dd><a href="https://lounge.mkcentral.com/mk8dx/TableDetails/1129948" target="_blank" rel="noopener">+286</a> vs <b><a href="https://lounge.mkcentral.com/mk8dx/TableDetails/1116241" target="_blank" rel="noopener">+294</a></b></dd></div>
+              <div class="field"><dt>Largest Loss</dt><dd><a href="https://lounge.mkcentral.com/mk8dx/TableDetails/1090157" target="_blank" rel="noopener">-288</a> vs <b><a href="https://lounge.mkcentral.com/mk8dx/TableDetails/817648" target="_blank" rel="noopener">-245</a></b></dd></div>
+              <div class="field wide"><dt>Against each other</dt><dd>Never in the same table as opponents.</dd></div>
+              <div class="field wide"><dt>As teammates</dt><dd>Never on the same team.</dd></div>
+            </dl>
+            <img class="pic" src="assets/compare.png" alt="/compare game: MK8DX player1: Faria player2: Adon all_time: True" loading="lazy" width="700" height="425">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:49:51</p>
+          </div>
+        </div></div></div><div class="variant" data-variant="w12" data-cmd="compare" id="w12-compare"><p class="vlabel">MKWorld 12P</p><div class="cmd-body"><div class="cmd-text"><p class="what">Two players side by side in the 12P lounge.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player1</li><li>player2</li><li>season</li><li>all_time</li><li>last</li><li>tier</li><li>format</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/compare game: MKWorld 12P player1: Oxy player2: Kurumi</code>
+          </p>
+          <div class="embed" style="--bar: #9ccbd6">
+            <img class="thumb" src="assets/ranks/Diamond.png" alt="Diamond rank" width="64" height="64">
+            <p class="title">Oxy vs Kurumi - MKWorld 12P - S3</p>
+            <dl class="fields">
+              <div class="field"><dt>Rank</dt><dd><b>#16</b> vs #103</dd></div>
+              <div class="field"><dt>MMR</dt><dd><b>13084</b> vs 10640</dd></div>
+              <div class="field"><dt>Peak MMR</dt><dd><b>13301</b> vs 10718</dd></div>
+              <div class="field"><dt>Events Played</dt><dd><b>643</b> vs 122</dd></div>
+              <div class="field"><dt>Win Rate</dt><dd><b>56.1%</b> vs 53.3%</dd></div>
+              <div class="field"><dt>W-L (Last 10)</dt><dd>9 - 1 vs 8 - 2</dd></div>
+              <div class="field"><dt>+/- (Last 10)</dt><dd>+554 vs <b>+647</b></dd></div>
+              <div class="field"><dt>Avg Score</dt><dd><b>89.7</b> vs 80.2</dd></div>
+              <div class="field"><dt>Avg (No SQ)</dt><dd><b>89.6</b> vs 80.1</dd></div>
+              <div class="field"><dt>Avg (Last 10)</dt><dd><b>95.5</b> vs 85.0</dd></div>
+              <div class="field"><dt>Partner Avg</dt><dd>82.0 vs <b>88.8</b></dd></div>
+              <div class="field"><dt>Partner (No SQ)</dt><dd>80.0 vs <b>85.7</b></dd></div>
+              <div class="field"><dt>Largest Gain</dt><dd><a href="https://lounge.mkcentral.com/mkworld/TableDetails/1112081" target="_blank" rel="noopener">+259</a> vs <b><a href="https://lounge.mkcentral.com/mkworld/TableDetails/1110697" target="_blank" rel="noopener">+264</a></b></dd></div>
+              <div class="field"><dt>Largest Loss</dt><dd><a href="https://lounge.mkcentral.com/mkworld/TableDetails/1139855" target="_blank" rel="noopener">-426</a> vs <b><a href="https://lounge.mkcentral.com/mkworld/TableDetails/1106213" target="_blank" rel="noopener">-322</a></b></dd></div>
+              <div class="field wide"><dt>Against each other (47 events)</dt><dd>Placed higher: <b>27</b> - <b>16</b> (4 tied)<br>Avg score: 88.5 - 77.8<br>Avg MMR change: +10 - +3</dd></div>
+              <div class="field wide"><dt>As teammates (1 event)</dt><dd>Team wins: <b>0</b> of 1<br>Avg team rank: 5.0<br>Avg score: 74.0 - 66.0<br>Avg MMR change (each): -109</dd></div>
+            </dl>
+            <img class="pic" src="assets/w12_compare.png" alt="/compare game: MKWorld 12P player1: Oxy player2: Kurumi" loading="lazy" width="700" height="425">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:49:56</p>
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><a href="#/stats">&larr; /stats</a><a href="#/partners">/partners &rarr;</a></nav></article><article class="cmd" data-cmd="partners"><header class="head"><h2>/partners</h2></header><div class="seg" role="tablist" aria-label="Game"><button type="button" role="tab" data-v="mk8dx">MK8DX</button><button type="button" role="tab" data-v="w12">MKWorld 12P</button></div><div class="variant" data-variant="mk8dx" data-cmd="partners" id="partners"><p class="vlabel">MK8DX</p><div class="cmd-body"><div class="cmd-text"><p class="what">Who a player scores best (or worst) with.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li><li>all_time</li><li>min_tables</li><li>order</li><li>tier</li><li>format</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/partners game: MK8DX player: Demon all_time: True format: 2v2 min_tables: 2</code>
+          </p>
+          <div class="embed" style="--bar: #d41c60">
+            <p class="title">Demon - partners</p>
+            <img class="pic" src="assets/partners.png" alt="/partners game: MK8DX player: Demon all_time: True format: 2v2 min_tables: 2" loading="lazy" width="1100" height="718">
+          </div>
+        </div></div></div><div class="variant" data-variant="w12" data-cmd="partners" id="w12-partners"><p class="vlabel">MKWorld 12P</p><div class="cmd-body"><div class="cmd-text"><p class="what">Partners in the 12P squad and team events.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li><li>all_time</li><li>min_tables</li><li>order</li><li>tier</li><li>format</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/partners game: MKWorld 12P player: Adon all_time: True min_tables: 5</code>
+          </p>
+          <div class="embed" style="--bar: #286cd3">
+            <p class="title">Adon - partners</p>
+            <img class="pic" src="assets/w12_partners.png" alt="/partners game: MKWorld 12P player: Adon all_time: True min_tables: 5" loading="lazy" width="1100" height="618">
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><a href="#/compare">&larr; /compare</a><a href="#/rivals">/rivals &rarr;</a></nav></article><article class="cmd" data-cmd="rivals"><header class="head"><h2>/rivals</h2></header><div class="variant" data-variant="mk8dx" data-cmd="rivals"><div class="cmd-body"><div class="cmd-text"><p class="what">The players a player meets most often, with the record against each of them.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li><li>all_time</li><li>min_tables</li><li>tier</li><li>format</li></ul></div><div class="reply">
+<p class="used"><img src="assets/x1_icon.png" alt="" width="20" height="20"> <b>X1</b> <span class="app">APP</span> <code>/rivals game: MK8DX player: Demon</code></p>
+<div class="embed" style="--bar: #d41c60">
+<p class="title">Demon - rivals</p>
+<img class="pic" src="assets/rivals.png" alt="/rivals game: MK8DX player: Demon" loading="lazy" width="1100" height="412">
+<p class="embed-footer">X1 by FSR - 2026-10-27 12:18:08</p>
+</div>
+</div></div></div><nav class="pager" aria-label="Other commands"><a href="#/partners">&larr; /partners</a><a href="#/tiers">/tiers &rarr;</a></nav></article><article class="cmd" data-cmd="tiers"><header class="head"><h2>/tiers</h2></header><div class="seg" role="tablist" aria-label="Game"><button type="button" role="tab" data-v="mk8dx">MK8DX</button><button type="button" role="tab" data-v="w24">MKWorld 24P</button></div><div class="variant" data-variant="mk8dx" data-cmd="tiers" id="tiers"><p class="vlabel">MK8DX</p><div class="cmd-body"><div class="cmd-text"><p class="what">A player's results in each tier.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li><li>all_time</li><li>format</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/tiers game: MK8DX player: Adon all_time: True</code>
+          </p>
+          <div class="embed" style="--bar: #f1c40f">
+            <p class="title">Adon - by tier</p>
+            <img class="pic" src="assets/tiers.png" alt="/tiers game: MK8DX player: Adon all_time: True" loading="lazy" width="1032" height="868">
+          </div>
+        </div></div></div><div class="variant" data-variant="w24" data-cmd="tiers" id="w24-tiers"><p class="vlabel">MKWorld 24P</p><div class="cmd-body"><div class="cmd-text"><p class="what">Results in each tier for a 24P player.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li><li>all_time</li><li>format</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/tiers game: MKWorld 24P player: AIYOU all_time: True</code>
+          </p>
+          <div class="embed" style="--bar: #3fabb8">
+            <p class="title">AIYOU - by tier</p>
+            <img class="pic" src="assets/w24_tiers.png" alt="/tiers game: MKWorld 24P player: AIYOU all_time: True" loading="lazy" width="1032" height="944">
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><a href="#/rivals">&larr; /rivals</a><a href="#/streak">/streak &rarr;</a></nav></article><article class="cmd" data-cmd="streak"><header class="head"><h2>/streak</h2></header><div class="variant" data-variant="mk8dx" data-cmd="streak" id="streak"><div class="cmd-body"><div class="cmd-text"><p class="what">Win and loss streaks, the last 10 events and the MMR gained over the last day, week and month.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/streak game: MK8DX player: Inner Peace</code>
+          </p>
+          <div class="embed" style="--bar: #286cd3">
+            <p class="title">Inner Peace - streaks</p>
+            <img class="pic" src="assets/streak.png" alt="/streak game: MK8DX player: Inner Peace" loading="lazy" width="1100" height="691">
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><a href="#/tiers">&larr; /tiers</a><a href="#/when">/when &rarr;</a></nav></article><article class="cmd" data-cmd="when"><header class="head"><h2>/when</h2></header><div class="variant" data-variant="mk8dx" data-cmd="when" id="when"><div class="cmd-body"><div class="cmd-text"><p class="what">When a player usually plays. Pick your timezone in the <b>timezone</b> setting (type to search the list); X1 remembers it.</p><ul class="opts" aria-label="Settings"><li>game</li><li>player</li><li>season</li><li>all_time</li><li>timezone</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/when game: MK8DX player: Yanfei all_time: True timezone: (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi</code>
+          </p>
+          <div class="embed" style="--bar: #9ccbd6">
+            <p class="title">Yanfei - when they play</p>
+            <img class="pic" src="assets/when.png" alt="/when game: MK8DX player: Yanfei all_time: True timezone: (UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi" loading="lazy" width="1100" height="491">
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><a href="#/streak">&larr; /streak</a><a href="#/leaderboard">/leaderboard &rarr;</a></nav></article><article class="cmd" data-cmd="leaderboard"><header class="head"><h2>/leaderboard</h2></header><div class="seg" role="tablist" aria-label="Game"><button type="button" role="tab" data-v="mk8dx">MK8DX</button><button type="button" role="tab" data-v="w12">MKWorld 12P</button><button type="button" role="tab" data-v="w24">MKWorld 24P</button></div><div class="variant" data-variant="mk8dx" data-cmd="leaderboard" id="leaderboard"><p class="vlabel">MK8DX</p><div class="cmd-body"><div class="cmd-text"><p class="what">The lounge leaderboard. Filter by country or name; filtered rows are numbered 1, 2, 3 ... with the global rank in brackets.</p><ul class="opts" aria-label="Settings"><li>game</li><li>season</li><li>country</li><li>search</li><li>limit</li><li>page</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/leaderboard game: MK8DX country: CA</code>
+          </p>
+          <div class="embed" style="--bar: #286cd3">
+            <p class="title">MK8DX leaderboard</p>
+            <img class="pic" src="assets/leaderboard.png" alt="/leaderboard game: MK8DX country: CA" loading="lazy" width="1100" height="722">
+          </div>
+        </div></div></div><div class="variant" data-variant="w12" data-cmd="leaderboard" id="w12-leaderboard"><p class="vlabel">MKWorld 12P</p><div class="cmd-body"><div class="cmd-text"><p class="what">The same board for Mario Kart World, here page 3 of the US players of the 12P lounge.</p><ul class="opts" aria-label="Settings"><li>game</li><li>season</li><li>country</li><li>search</li><li>limit</li><li>page</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/leaderboard game: MKWorld 12P country: US limit: 12 page: 3</code>
+          </p>
+          <div class="embed" style="--bar: #286cd3">
+            <p class="title">MKWorld 12P leaderboard</p>
+            <img class="pic" src="assets/w12_leaderboard.png" alt="/leaderboard game: MKWorld 12P country: US limit: 12 page: 3" loading="lazy" width="1100" height="598">
+          </div>
+        </div></div></div><div class="variant" data-variant="w24" data-cmd="leaderboard" id="w24-leaderboard"><p class="vlabel">MKWorld 24P</p><div class="cmd-body"><div class="cmd-text"><p class="what">The 24P lounge board, here page 2 of the US players.</p><ul class="opts" aria-label="Settings"><li>game</li><li>season</li><li>country</li><li>search</li><li>limit</li><li>page</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/leaderboard game: MKWorld 24P country: US limit: 12 page: 2</code>
+          </p>
+          <div class="embed" style="--bar: #286cd3">
+            <p class="title">MKWorld 24P leaderboard</p>
+            <img class="pic" src="assets/w24_leaderboard.png" alt="/leaderboard game: MKWorld 24P country: US limit: 12 page: 2" loading="lazy" width="1100" height="598">
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><a href="#/when">&larr; /when</a><a href="#/calctable">/calctable &rarr;</a></nav></article><article class="cmd" data-cmd="calctable"><header class="head"><h2>/calctable</h2></header><div class="seg" role="tablist" aria-label="Game"><button type="button" role="tab" data-v="mk8dx">MK8DX</button><button type="button" role="tab" data-v="w12">MKWorld 12P</button><button type="button" role="tab" data-v="w24">MKWorld 24P</button></div><div class="variant" data-variant="mk8dx" data-cmd="calctable" id="calctable"><p class="vlabel">MK8DX</p><div class="cmd-body"><div class="cmd-text"><p class="what">The MMR change of every player on a lounge table.</p><ul class="opts" aria-label="Settings"><li>table</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/calctable table: 1143609</code>
+          </p>
+          <div class="embed" style="--bar: #3fabb8">
+            <a class="title" href="https://lounge.mkcentral.com/TableDetails/1143609" target="_blank" rel="noopener">Table 1143609 - Tier BC - 2v2</a>
+            <img class="pic" src="assets/calctable.png" alt="/calctable table: 1143609" loading="lazy" width="1100" height="840">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:49:52</p>
+          </div>
+        </div></div></div><div class="variant" data-variant="w12" data-cmd="calctable" id="w12-calctable"><p class="vlabel">MKWorld 12P</p><div class="cmd-body"><div class="cmd-text"><p class="what">Tables work the same in the 12P lounge.</p><ul class="opts" aria-label="Settings"><li>table</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/calctable table: 1145782</code>
+          </p>
+          <div class="embed" style="--bar: #3fabb8">
+            <a class="title" href="https://lounge.mkcentral.com/TableDetails/1145782" target="_blank" rel="noopener">Table 1145782 - Tier B - FFA</a>
+            <img class="pic" src="assets/w12_calctable.png" alt="/calctable table: 1145782" loading="lazy" width="1100" height="840">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:49:54</p>
+          </div>
+        </div></div></div><div class="variant" data-variant="w24" data-cmd="calctable" id="w24-calctable"><p class="vlabel">MKWorld 24P</p><div class="cmd-body"><div class="cmd-text"><p class="what">A 24-player table on one card, here with the squad teams.</p><ul class="opts" aria-label="Settings"><li>table</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/calctable table: 1130909</code>
+          </p>
+          <div class="embed" style="--bar: #5865f2">
+            <a class="title" href="https://lounge.mkcentral.com/TableDetails/1130909" target="_blank" rel="noopener">Table 1130909 - Tier SQ - 2v2</a>
+            <img class="pic" src="assets/w24_calctable.png" alt="/calctable table: 1130909" loading="lazy" width="1100" height="1537">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:49:58</p>
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><a href="#/leaderboard">&larr; /leaderboard</a><a href="#/calcroom">/calcroom &rarr;</a></nav></article><article class="cmd" data-cmd="calcroom"><header class="head"><h2>/calcroom</h2></header><div class="seg" role="tablist" aria-label="Game"><button type="button" role="tab" data-v="mk8dx">MK8DX</button><button type="button" role="tab" data-v="w24">MKWorld 24P</button></div><div class="variant" data-variant="mk8dx" data-cmd="calcroom" id="calcroom"><p class="vlabel">MK8DX</p><div class="cmd-body"><div class="cmd-text"><p class="what">What each finishing place would give you in the room that is going on now.</p><ul class="opts" aria-label="Settings"><li>mode</li><li>room</li><li>team</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/calcroom mode: MK8DX room: 1 team: Faria</code>
+          </p>
+          <div class="embed" style="--bar: #3fabb8">
+            <p class="title">Licht/ninihini fanboy/Faria - possible results</p>
+            <img class="pic" src="assets/calcroom.png" alt="/calcroom mode: MK8DX room: 1 team: Faria" loading="lazy" width="1100" height="840">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:49:53</p>
+          </div>
+        </div></div></div><div class="variant" data-variant="w24" data-cmd="calcroom" id="w24-calcroom"><p class="vlabel">MKWorld 24P</p><div class="cmd-body"><div class="cmd-text"><p class="what">Every finishing place of a 24-player room.</p><ul class="opts" aria-label="Settings"><li>mode</li><li>room</li><li>team</li></ul></div><div class="reply">
+          <p class="used">
+            <img src="assets/x1_icon.png" alt="" width="20" height="20">
+            <b>X1</b> <span class="app">APP</span>
+            <code>/calcroom mode: MKWorld 24P room: 1 team: Adon</code>
+          </p>
+          <div class="embed" style="--bar: #5865f2">
+            <p class="title">Adon/AIYOU - possible results</p>
+            <img class="pic" src="assets/w24_calcroom.png" alt="/calcroom mode: MKWorld 24P room: 1 team: Adon" loading="lazy" width="1100" height="1537">
+            <p class="embed-footer">X1 by FSR - 2026-10-16 04:50:00</p>
+          </div>
+        </div></div></div><nav class="pager" aria-label="Other commands"><a href="#/calctable">&larr; /calctable</a><a href="#/clan">/clan &rarr;</a></nav></article><article class="cmd" data-cmd="clan"><header class="head"><h2>/clan</h2></header><div class="seg" role="tablist" aria-label="Game"><button type="button" role="tab" data-v="mk8dx">MK8DX</button><button type="button" role="tab" data-v="mkworld">MKWorld</button></div><div class="variant" data-variant="mk8dx" data-cmd="clan"><p class="vlabel">MK8DX</p><div class="cmd-body"><div class="cmd-text"><p class="what">A team from the MKCentral registry: its roster with every member's stats, and the team's own description, region and staff. When several teams share a name, X1 shows a list to pick from.</p><ul class="opts" aria-label="Settings"><li>game</li><li>name</li></ul></div><div class="reply">
+<p class="used"><img src="assets/x1_icon.png" alt="" width="20" height="20"> <b>X1</b> <span class="app">APP</span> <code>/clan game: MK8DX (150cc) name: CaughtIn4k</code></p>
+<div class="embed has-thumb" style="--bar: #1c4c5c">
+<img class="thumb logo" src="assets/clan_logo.png" alt="" width="200" height="167">
+<a class="title" href="https://mkcentral.com/registry/teams/profile?id=2878" target="_blank" rel="noopener">CaughtIn4k</a>
+<p class="desc"><i>Caught.</i><br><br><b>Tag</b> : 【◎】<br><b>Game</b> : MK8DX (150cc)<br><b>Team ID</b> : 2878<br><b>Region</b> : United States<br><b>Created on</b> : October 30, 2024<br><b>Captains</b> : Corbin Carroll/Cone/mia, Simpuw<br><b>Manager</b> : Kingambit</p>
+<img class="pic" src="assets/clan.png" alt="/clan game: MK8DX (150cc) name: CaughtIn4k" loading="lazy" width="1100" height="1076">
+<p class="embed-footer">X1 by FSR - 2026-10-27 12:18:10</p>
+</div>
+</div></div></div><div class="variant" data-variant="mkworld" data-cmd="clan"><p class="vlabel">MKWorld</p><div class="cmd-body"><div class="cmd-text"><p class="what">The same card for a Mario Kart World team.</p><ul class="opts" aria-label="Settings"><li>game</li><li>name</li></ul></div><div class="reply">
+<p class="used"><img src="assets/x1_icon.png" alt="" width="20" height="20"> <b>X1</b> <span class="app">APP</span> <code>/clan game: MKWorld name: Clarity</code></p>
+<div class="embed has-thumb" style="--bar: #010001">
+<img class="thumb logo" src="assets/w_clan_logo.png" alt="" width="200" height="174">
+<a class="title" href="https://mkcentral.com/registry/teams/profile?id=3722" target="_blank" rel="noopener">Clarity</a>
+<p class="desc"><i>the losers avengers</i><br><br><b>Tag</b> : ¢y☆<br><b>Game</b> : MKWorld<br><b>Team ID</b> : 3722<br><b>Region</b> : Canada<br><b>Created on</b> : August 18, 2026<br><b>Captain</b> : Tyler<br><b>Manager</b> : green</p>
+<img class="pic" src="assets/w_clan.png" alt="/clan game: MKWorld name: Clarity" loading="lazy" width="1100" height="555">
+<p class="embed-footer">X1 by FSR - 2026-10-27 12:18:13</p>
+</div>
+</div></div></div><nav class="pager" aria-label="Other commands"><a href="#/calcroom">&larr; /calcroom</a><a href="#/lang">/lang &rarr;</a></nav></article><article class="cmd" data-cmd="lang"><header class="head"><h2>/lang</h2></header><div class="variant" data-variant="mk8dx" data-cmd="lang"><div class="cmd-body"><div class="cmd-text"><p class="what">Choose the language X1 answers in: English or Japanese. By default it follows your Discord language, and X1 remembers your choice.</p><ul class="opts" aria-label="Settings"><li>language</li></ul></div></div></div><nav class="pager" aria-label="Other commands"><a href="#/clan">&larr; /clan</a><a href="#/help">/help &rarr;</a></nav></article><article class="cmd" data-cmd="help"><header class="head"><h2>/help</h2></header><div class="variant" data-variant="mk8dx" data-cmd="help"><div class="cmd-body"><div class="cmd-text"><p class="what">Lists every command and its settings.</p></div></div></div><nav class="pager" aria-label="Other commands"><a href="#/lang">&larr; /lang</a><span></span></nav></article>
+      <footer class="site-footer"><p>Data from the MKCentral Lounge. X1 is a community project by Fentstreet Research &amp; Development.</p></footer>
+    </main>
+  </div>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
